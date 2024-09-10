@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9A54D6;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title img {
+    width: 9rem;
+    margin-left: 3rem;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar .menu li {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar .menu li select {
+    padding: 0.6rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar .menu .img1 {
+    width: 7rem;
+}
+
+.navbar .menu .img2 {
+    width: 2rem;
+}
+
+
+@media (max-width: 500px) {
+    .navbar {
+        background-color: #9A54D6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .title img {
+        width: 7rem;
+        margin-left: 2rem;
+    }
+    
+    .navbar .menu {
+        margin-right: 1.5rem;
+        gap: 2rem;
+    }    
+    .navbar .menu .img1 {
+        width: 6rem;
+    }
+    
+    .navbar .menu .img2 {
+        width: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .title img {
+        width: 6rem;
+        margin-left: 2rem;
+    }
+    
+    .navbar .menu {
+        display: none;
+    }}
+/* seaction */
+section{
+    display: flex;
+    justify-content: space-between;
+}
+section .text-Content{
+    text-align: center;
+    margin-top: 2rem;
+    width: 55%;
+}
+section .text-Content h1{
+    color: white;
+    font-size: 5rem;
+    width: 30rem;
+    margin-left: 13rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section .text-Content p{
+    width: 30rem;
+    margin-left: 14rem;
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+section .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin-left: 100px;
+}
+section .btns .btn1{
+    padding: 0.5rem 3rem;
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: linear 0.3s;
+    &&:hover{
+        background-color: #fff;
+        color: #9A54D6;
+    }
+}
+
+section .btns .btn2{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    background-color:transparent;
+    padding: 0.7rem;
+}
+section .btns span{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+transition: ease-in-out 0.5s;
+    &&:hover{
+        letter-spacing: 2px;
+    }
+}
+hr{
+    width: 3rem;
+}
+section .input {
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    margin-left: 14rem;
+    padding: 1rem;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+section .input .h3{
+    border: none;
+    background-color:#9A54D6 ;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* outline: none; */
+}
+section .input .search{
+        background-color: white;
+        color:#9A54D6 ;
+        border: none;
+        padding: 0.4rem 1rem;
+        outline: none;
+        border-bottom: 2px solid white;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 1rem;
+}
+
+.tex {
+    color: white;
+    margin-top: 30px;
+}
+.icn ul {
+    color: white;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 520px;
+    justify-content: space-around;
+    margin-left: 300px;
+    list-style: none;
+}
+
+section .slider{
+    display: block;
+    margin-right: auto;
+    width: 40%;
+}
+section .slider img{
+    width: 30rem;
+}
+section .slider {
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+}
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+.img2, .img3 {
+    opacity: 0; /* Hide second and third images initially */
+  }
+  
+  .slider:hover .img1 {
+    transform: translateX(-100%); /* Move the first image out of view */
+    opacity: 0;
+  }
+  
+  .slider:hover .img2 {
+    opacity: 1; /* Show the second image */
+  }
+  
+  .slider:hover .img1:hover ~ .img2 {
+    transform: translateX(-100%);
+  }
+  
+  .slider:hover .img3 {
+    opacity: 1; /* Show the third image after the second */
+  }
+
+@media (max-width:500px){
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+    section .text-Content{
+        margin-top: 2rem;
+        width: 60%;
+    }
+    section .text-Content h1{
+        font-size: 4rem;
+        width: 28rem;
+        margin-left: 11rem;
+    }
+    section .text-Content p{
+        width: 28rem;
+        margin-left: 12rem;
+        font-size: 0.8rem;
+    }
+    section .btns{
+        display: flex;
+        gap: 1.5rem;
+        margin-left: 11rem;
+        padding: 0.7rem;
+    }
+    section .input {
+        width: 20rem;
+        margin-left: 13rem;
+        padding: 0.7rem;
+        color: #fff;
+    }
+    section .input .inputt{
+        font-size: 0.6rem;
+    }
+    section .input .search{
+            padding: 0.4rem 1.5rem;
+            font-size: 0.9rem;
+    }
+    hr{
+        width: 2.6rem;
+    }
+    .img{
+        margin-top: -50px;
+        margin-left: -25px;
+        width: 400px;
+        height: 500px;
+    }
+    .icn ul{
+        margin-top: -20px;
+    }
+    section .slider{
+        display: block;
+    margin-right: auto;
+    width: 40%;
+    }
+    section .slider img{
+        width: 28rem;
+        position: absolute;
+    }   
+
+}
+@media (max-width: 500px){
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+    section .text-Content{
+        margin-top: 1.5rem;
+        width: 60%;
+    }
+    section .text-Content h1{
+        font-size: 3.5rem;
+        width: 22rem;
+        margin-left: 5rem;
+    }
+    section .text-Content p{
+        width: 22rem;
+        margin-left: 5rem;
+        font-size: 0.75rem;
+    }
+    section .btns{
+        display: flex;
+        gap: 1rem;
+        margin-left: 5rem;
+        padding: 0.5rem;
+    }
+    section .input {
+        width: 18rem;
+        margin-left: 5rem;
+        padding: 0.5rem;
+        color: #fff;
+    }
+    section .input .h3{
+        font-size: 0.5rem;
+        margin-left: 50px;
+    }
+    section .input .search{
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+    }
+    hr{
+        width: 2rem;
+    }
+    
+    section .slider{
+        width: 35%;
+        margin-right: 1rem;
+    }
+    section .slider img{
+        width: 20rem;
+    }
+}
+
+@media (max-width: 500px){
+    section{
+        justify-content: center;
+        padding: 1rem;
+    }
+    section .text-Content{
+        margin-top: 1rem;
+        width: 70%;
+    }
+    section .text-Content h1{
+        font-size: 2.5rem;
+        width: 18rem;
+        margin-left: 2rem;
+    }
+    section .text-Content p{
+        width: 18rem;
+        margin-left: 2rem;
+        font-size: 0.65rem;
+    }
+    section .btns{
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    section .input {
+        width: 15rem;
+        margin-left: 2rem;
+        padding: 0.4rem;
+    }
+    section .input .inputt{
+        font-size: 0.5rem;
+    }
+    section .input .search{
+        padding: 0.3rem;
+        font-size: 0.75rem;
+    }
+    section .slider .icn{
+        margin-top: 440px;
+        margin-left: -300px;
+    }
+    hr{
+        width: 1.5rem;
+    }
+    
+    section .slider{
+        width: 50%;
+        margin-right: 0;
+    }
+    section .slider img{
+        width: 15rem;
+    }
+}
